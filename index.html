@@ -9,55 +9,254 @@
     <link rel="stylesheet" href="css/normalize.css">
 
 </head>
+</head>
 <body>
-    <header class="hero">
-        <nav class="nav container">
+<header class="hero">
+    <div class="nav_bg" id="--nav_bg">
+        <nav class="nav container" id="--box">
             <div class="nav_logo">
-                <h2 class="nav_title change_color">Gabriel Eraso</h2>
+                <h2 class="nav_title">Gabriel Eraso</h2>
             </div>
             <ul class="nav__link nav__link--menu">
                 <li class="nav_items">
-                    <a href="#" class="nav__links change_color">Inicio</a>
+                    <a href="#" class="nav__links">Inicio</a>
                 </li>
                 <li class="nav_items">
-                    <a href="#" class="nav__links change_color">Acerca de</a>
+                    <a href="#" class="nav__links">Experiencia</a>
                 </li>
                 <li class="nav_items">
-                    <a href="#" class="nav__links change_color">Contacto</a>
+                    <a href="#" class="nav__links">Proyectos</a>
                 </li>
                 <li class="nav_items">
-                    <a href="#" class="nav__links change_color">Blog</a>
+                    <a href="#" class="nav__links">contacto</a>
                 </li>
                 <img src="Img/close.svg" alt="cerrar" class="nav_close">
             </ul>
             <div class="nav_menu">
                 <img src="Img/menu.svg" alt="menu" class="nav_img">
             </div>
-        </nav>
-    
-        <section class="hero_container container">
-            <h1 class="hero_title">Aprende CSS3 desde cero hasta dominarlo</h1>
-            <p class="hero_paragraph">
-                elige aprender CSS de una vez por todas, 
-                una vez que termines este curso, 
-                serás capaz de crear cualquier layout con CSS y 
-                crear tus propias animaciones
-            </p>
-            <a href="#" class="cta" id="">Comienza ahora</a>
-        </section>
-    </header>
-
-    <header class="ensayo_container container--show">
-        <div class="ensayo_muestra cuadro--show" id="cuadro">
-            <h2>Holas</h2>
-        </div>
-    </header>
-    <section class="ensayo_container">
-        <div class="ensayo_muestra2 cuadro--show" id="cuadro2">
-            <h2>texto 2</h2>
+        </nav>    
+    </div>
+    <section class="hero_container container">
+        <h1 class="hero_title">Soy Gabriel Eraso</h1>
+        <p class="hero_paragraph">
+            Desarrollador Full-stack apasionado por soluciones orientadas al detalle. Creo aplicaciones que abarcan experiencias multimedia inmersivas y plataformas web modernas, combinando excelencia técnica con experiencias de usuario cautivadoras.
+        </p>
+    </section>
+</header>
+<main>
+    <section class="container about">
+        <h2 class="subtitle">¿Qué aprenderas en este curso?</h2>
+        <p class="about__paragragh">Todo lo necesario y obligatorio de CSS, (Flexbox, Grid, Propierties, Position,
+            Animaciones, Box Model y más)
+        </p>
+        <div class="about__main">
+            <article class="about__icons">
+                <img src="Img/Code_Icon.svg" alt="" class="about_icon">
+                <h3 class="about__title">CSS Layouts</h3>
+                <p class="about__paragragh">Todo lo necesario y obligatorio de CSS, (Flexbox, Grid, Propierties, Position,
+                    Animaciones, Box Model y más)
+                </p>
+            </article>
+            <article class="about__icons">
+                <img src="Img/Code_Icon.svg" alt="" class="about_icon">
+                <h3 class="about__title">Animaciones</h3>
+                <p class="about__paragragh">Todo lo necesario y obligatorio de CSS, (Flexbox, Grid, Propierties, Position,
+                    Animaciones, Box Model y más)
+                </p>
+            </article>
+            <article class="about__icons">
+                <img src="Img/Code_Icon.svg" alt="" class="about_icon">
+                <h3 class="about__title">Sass</h3>
+                <p class="about__paragragh">Todo lo necesario y obligatorio de CSS, (Flexbox, Grid, Propierties, Position,
+                    Animaciones, Box Model y más)
+                </p>
+            </article>
         </div>
     </section>
-    
-    <!-- <script src="js/hiddeSection.js"></script> -->
+
+    <section class="knowledge">
+        <div class="knowledge__container container">
+            <div class="knowledge__texts">
+                <h2 class="subtitle">Curso completo de CSS3, ¡Domina CSS de una vez por todas</h2>
+                <p class="knowledge__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum debitis aliquam optio. Expedita eligendi accusamus vitae odio omnis. Ut expedita placeat reprehenderit inventore itaque molestiae! Inventore quae voluptates culpa soluta.</p>
+                <a href="" class="cta">Entrar al curso</a>
+            </div>
+            <figure class="knowledge_picture">
+                <img src="Img/computer.jpg" alt="" class="knowledge__img">
+            </figure>
+        </div>
+
+    </section>
+
+    <section class="price container">
+        <h2 class="subtitle">Obten el plan perfecto para aprender</h2>
+        <div class="price__table">
+            <div class="price__element">
+                <p class="price__name">Basic</p>
+                <h3 class="plan__price">Free</h3>
+                <div class="price__items">
+                    <p class="price__features">Flexbox</p>
+                    <p class="price__features">Layouts</p>
+                    <p class="price__features">Responsive</p>
+                </div>
+
+                <a href="#" class="price__cta">Empieza ahora</a>
+            </div>
+            <div class="price__element price__element--best">
+                <p class="price__name">Grid</p>
+                <h3 class="plan__price">$30/mes</h3>
+                <div class="price__items">
+                    <p class="price__features">Flexbox</p>
+                    <p class="price__features">Layouts</p>
+                    <p class="price__features">Responsive</p>
+                </div>
+
+                <a href="#" class="price__cta">Empieza ahora</a>
+            </div>
+            <div class="price__element">
+                <p class="price__name">Animaciones</p>
+                <h3 class="plan__price">$40/mes</h3>
+                <div class="price__items">
+                    <p class="price__features">Animation</p>
+                    <p class="price__features">Transition</p>
+                    <p class="price__features">Render Website</p>
+                </div>
+
+                <a href="#" class="price__cta">Empieza ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimony">
+        <div class="testimony__container container">
+            <img src="Img/Left_arrow.svg" alt="left" class="testimony__arrow" id="before">
+            <section class="testimony__body testimony__body--show" data-id="1">
+                <div class="testimony__texts">
+                    <h2 class="subtitle">Mi nombre es Jordan Alexander, <span class="testimony_course">estudiante de css.</span></h2>
+                    <p class="testimony__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptatem sapiente molestiae, ullam quo minima dolorem, beatae, hic eveniet itaque accusantium quos aliquid? Similique nesciunt dicta nemo quos dolor cumque!</p>
+                </div>
+                <figure class="testimony__picture">
+                    <img src="Img/Testimony01.jpg" alt="alexander" class="testimony__img">
+                </figure>
+            </section>
+            <section class="testimony__body" data-id="2">
+                <div class="testimony__texts">
+                    <h2 class="subtitle">Mi nombre es Alejandra perez, <span class="testimony_course">estudiante de css.</span></h2>
+                    <p class="testimony__review">Porro voluptatem sapiente molestiae, hic eveniet itaque accusantium quos aliquid? Similique nesciunt dicta nemo quos dolor cumque!</p>
+                </div>
+                <figure class="testimony__picture">
+                    <img src="Img/Testimony04.jpg" alt="alexander" class="testimony__img">
+                </figure>
+            </section>
+            <section class="testimony__body" data-id="3">
+                <div class="testimony__texts">
+                    <h2 class="subtitle">Mi nombre es Karen Arteaga, <span class="testimony_course">estudiante de css.</span></h2>
+                    <p class="testimony__review">Similique nesciunt dicta nemo quos dolor cumque!</p>
+                </div>
+                <figure class="testimony__picture">
+                    <img src="Img/Testimony03.jpg" alt="alexander" class="testimony__img">
+                </figure>
+            </section>
+            <img src="Img/Right_arrow.svg" alt="right" class="testimony__arrow" id="next">
+        </div>
+    </section>
+
+    <section class="question container">
+        <h2 class="subtitle">Preguntas frecuentes</h2>
+        <p class="question_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Neque hic, sapiente quia veritatis eveniet quibusdam reiciendis maiores nesciunt. 
+            Ipsam quod ut praesentium beatae libero quam neque quasi ab voluptate officia.</p>
+        <section class="question_container">
+            <article class="question_padding">
+                <div class="question_answer">
+                    <h3 class="question_title">¿Qué es CSS? 
+                        <span class="question_arrow">
+                                <img src="Img/Left_arrow.svg" alt="open" class="question_img">
+                        </span> 
+                    </h3>
+
+                    <p class="question_show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus corporis nulla iste id tempora, quod veritatis quaerat vel mollitia inventore deleniti sapiente consectetur provident placeat veniam saepe nostrum maiores eos?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto quis praesentium nesciunt ipsa inventore ullam eaque soluta maxime quam delectus cumque molestiae quod odio quasi vel, ab dolorum temporibus? Delectus?
+                    </p>
+                </div>
+            </article>
+            <article class="question_padding">
+                <div class="question_answer">
+                    <h3 class="question_title">¿Qué es CSS Grid?<span class="question_arrow">
+                        <img src="Img/Left_arrow.svg" alt="open" class="question_img">
+                    </span> </h3>
+
+                    <p class="question_show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus corporis nulla iste id tempora, quod veritatis quaerat vel mollitia inventore deleniti sapiente consectetur provident placeat veniam saepe nostrum maiores eos?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto quis praesentium nesciunt ipsa inventore ullam eaque soluta maxime quam delectus cumque molestiae quod odio quasi vel, ab dolorum temporibus? Delectus?
+                    </p>
+                </div>
+            </article>
+        </section>
+        
+        <section class="question_offer">
+            <h2 class="subtitle">
+                ¿Estás listo para aprender CSS?
+            </h2>
+            <p class="question_copy">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic id unde alias accusantium quia harum veniam. Distinctio accusamus sed quae, maxime natus quas perspiciatis a ducimus tempore accusantium, repellat labore?</p>
+            <a href="#" class="cta">Aprende ahora</a>
+        </section>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <section class="footer_container container">
+        <nav class="nav nav--footer">
+            <h2 class="footer_title">Curso CSS</h2>
+            <ul class="nav__link nav__link--footer">
+                <li class="nav_items">
+                    <a href="#" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#" class="nav__links">Acerca de</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#" class="nav__links">Contacto</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#" class="nav__links">Blog</a>
+                </li>
+            </ul>
+        </nav>
+           
+
+            <form class="footer_form" action="https://formspree.io/f/xovjnzej"
+            method="POST">
+                <h2 class="footer_newsletter">Suscribite a la newsleter</h2>
+                <div class="footer_inputs">
+                    <input type="email" placeholder="Email:" class="fotter_input" name="email">
+                    <input type="submit" value="Registrate" class="fotter_submit">
+                </div>
+            </form>
+    </section>
+
+    <section class="footer_copy container">
+        <div class="footer_social">
+            <a href="#" class="footer_icons">
+                <img class="footer_img" src="Img/Left_arrow.svg" alt="footer_img">
+            </a>
+            <a href="#" class="footer_icons">
+                <img class="footer_img" src="Img/Right_arrow.svg" alt="footer_img">
+            </a>
+            <a href="#" class="footer_icons">
+                <img class="footer_img" src="Img/Left_arrow.svg" alt="footer_img">
+            </a>
+        </div>
+
+        <h3 class="footer_copyright">Derechos reservados &copy; Gabriel Eraso</h3>
+    </section>
+</footer>
+<!-- <script src="js/slider.js"></script>
+<script src="js/question.js"></script>
+<script src="js/menu.js"></script> -->
+
+<script src="js/stickyNav.js"></script>
+
 </body>
+</html>
 </html>

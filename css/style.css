@@ -9,6 +9,8 @@ body{
     font-family: "Poppins", "Pacifico", "Sigmar", "Dangrek", serif;
 }
 
+/* header */
+
 .container{
     width: 90%;
     max-width: 1200px;
@@ -42,18 +44,26 @@ body{
     z-index: -1;
 }
 
+.nav_bg{
+    display: grid;
+    top: 0px;
+}
+
 .nav{
     --pading-container: 0;
     height: 100%;
     display: flex;
     align-items: center;
+    /* position: sticky; */
+    top: 0px;
 }
 
 .nav_title{
     font-weight: 300;
-    font-size: 50px;
+    font-size: 30px;
     font-family: "Dangrek";
     filter: drop-shadow(2px 5px 5px rgba(0, 0, 0, 0.7));
+
 }
 
 .nav__link{
@@ -95,19 +105,23 @@ body{
     display: grid;
     --padding-container: 0;
     grid-auto-rows: max-content;
-    align-content: center;
     gap: 1em;
     padding-bottom: 100px;
-    text-align: center;
+    text-align: justify;
+    margin-left: 100px;
 }
 
 .hero_title{
     font-size: 3rem;
-
+    font-family: "Pacifico", "Sigmar", "Dangrek", serif;
 }
 
 .hero_paragraph{
+    font-family: "Poppins", serif;
     margin-bottom: 20px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    width: 80%;
 }
 
 .cta{
@@ -119,6 +133,20 @@ body{
     padding: 13px 30px;
     border-radius: 32px;
 }
+
+/* body */
+::before, ::after {
+    --tw-content: "";
+  }
+
+.dark\:text-slate-50:is(.dark *) {
+    --tw-text-opacity: 1;
+    color: rgb(248 250 252 / var(--tw-text-opacity, 1));
+  }
+
+.dark\:to-gradient-to-dark:is(.dark *) {
+    --tw-gradient-to: var(--gradient-to-dark) var(--tw-gradient-to-position);
+  }
 
 /* .ensayo_container{
     display: grid;

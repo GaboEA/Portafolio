@@ -1,7 +1,7 @@
 (function showHide(){
     var numero = 0;
 
-    const src = document.getElementById("cuadro");
+    const src = document.getElementById("--box2");
     src.addEventListener("touchstart",(e) => {
           for (let i = 0; i < e.touches.length; i++) {
             console.log(`touchpoint[${i}].screenY = ${e.touches[i].screenY}`);
