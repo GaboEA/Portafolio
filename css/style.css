@@ -239,7 +239,7 @@ body{
     background-image:  radial-gradient(#5b4198 0.5px, #03052a 0.5px);
     background-size: 20px 20px;
     overflow: hidden;
-    clip-path: polygon(50% 15%, 100% 0, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(50% 05%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
 
 .proyect_container{
@@ -250,21 +250,106 @@ body{
 }
 
 .proyect_box{
-    display: grid;
-    grid-template-columns: 300px 350px;
+    display: flex;
+    flex-direction: row;
     justify-self: center;
-    width: 600px;
     align-items: center;
-    gap: 1em;
+    padding: 2em 1em 0 1em;
+    width: 600px;
+    height: 380px;
+    background-image:  radial-gradient(#212569 0.5px, transparent 0.5px), radial-gradient(#212569 0.5px, #D4C99D 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+    border-color: #04052b;
+    border-style: double;
+    border-radius: 15px
 }
 
 .video_container{
-    width: 300px;
+    margin-right: 1em;
 }
 
 .proyect_video{
     width: max-content;
     height: max-content;
+}
+
+.proyect_info{
+
+}
+
+.proyect_paragraph{
+    font-family: "Poppins", serif;
+    text-align: justify;
+    /* letter-spacing: 2px; */
+    line-height: 1.5;
+    padding-right: 1em;
+    font-size: 90%;
+    /* font-weight: 200; */
+}
+
+hr._division{
+    color: #03052a;
+    border: 2px solid;
+    border-radius: 5px;
+    margin-right: 5em;
+}
+
+.proyect_platform{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5em;
+    margin-bottom: 1em;
+}
+
+.proyect_slider{
+    display: grid;
+}
+
+.proyect_box {display:none}
+
+.barra_{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.dots{
+    cursor:pointer; 
+    border-radius: 50%;
+    border: white 2px solid;
+    height: 13px;
+    width: 13px;
+    padding:0;
+    margin: 0 5px 0 5px;
+}
+
+.dot_pressed{
+    background-color: wheat;
+    border-radius: 50%;
+    border: white 2px solid;
+}
+
+.dots:hover{
+    background-color: #D3C89B;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 09s;
+}
+  
+@keyframes fade {
+    0% {opacity: 0} 
+    25% {opacity: 1}
+    75% {opacity: 1}
+    100% {opacity: 0} 
+}
+
+.demo{
+    transition: ease-in-out;
+    /* opacity: 1; */
+    transition-duration: 0.5s;
 }
 
 /* images */
