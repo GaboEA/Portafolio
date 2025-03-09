@@ -3,15 +3,15 @@
     var detectorPos = true;
 
     const douc = "repeating-linear-gradient(rgb(4, 5, 43),rgb(39, 41, 80) )";
-    const src = document.getElementById("--box");
+    // const src = document.getElementsById("--box");
     
-    src.addEventListener("touchstart",(e) => {
-          for (let i = 0; i < e.touches.length; i++) {
-            console.log(`touchpoint[${i}].screenY = ${e.touches[i].screenY}`);
-          }
-        },
-        false,
-    );    
+    // src.addEventListener("touchstart",(e) => {
+    //       for (let i = 0; i < e.touches.length; i++) {
+    //         console.log(`touchpoint[${i}].screenY = ${e.touches[i].screenY}`);
+    //       }
+    //     },
+    //     false,
+    // );    
 
     window.addEventListener("scroll", (event) => {
         let scroll = this.scrollY;
