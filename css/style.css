@@ -268,6 +268,8 @@ body{
 
 .video_container{
     margin-right: 1em;
+    /* Aquí va las lineas de la imagen */
+    width: 300px;
 }
 
 .proyect_video{
@@ -291,7 +293,7 @@ body{
 
 hr._division{
     color: #03052a;
-    border: 2px solid;
+    border: 1px solid;
     border-radius: 5px;
     margin-right: 5em;
 }
@@ -309,6 +311,12 @@ hr._division{
 
 .proyect_box {display:none}
 
+.proyect_img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
 .barra_{
     display: flex;
     justify-content: center;
@@ -318,7 +326,7 @@ hr._division{
 .dots{
     cursor:pointer; 
     border-radius: 50%;
-    border: white 2px solid;
+    border: white 2px double;
     height: 13px;
     width: 13px;
     padding:0;
@@ -328,7 +336,7 @@ hr._division{
 .dot_pressed{
     background-color: wheat;
     border-radius: 50%;
-    border: white 2px solid;
+    border: #03052a 2px double;
 }
 
 .dots:hover{
@@ -349,11 +357,55 @@ hr._division{
 
 .demo{
     transition: ease-in-out;
-    /* opacity: 1; */
     transition-duration: 0.5s;
 }
 
-/* images */
+/* Internal Video Youtube */
+
+.video_expand {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+  
+/* Modal Content (image) */
+.video_content {
+    margin: auto;
+    display: block;
+}
+    
+/* Add Animation */
+.video_content {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+} 
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #d4c99d;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover{
+    color: #948d71;
+}
+
+/* images / buttons */
 
 .img_point{
 width: 24px;
