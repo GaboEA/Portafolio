@@ -315,6 +315,14 @@ hr._division{
     width: 100%;
     height: 100%;
     cursor: pointer;
+    scale: 1;
+    transition: 0.3s;
+}
+
+.proyect_img:hover{
+    opacity: 0.7;
+    transition: 0.3s;
+    scale: 1.1;
 }
 
 .barra_{
@@ -380,6 +388,9 @@ hr._division{
 .video_content {
     margin: auto;
     display: block;
+    border-radius: 5px;
+    overflow: hidden;
+    border: #d4c99d 4px double;
 }
     
 /* Add Animation */
