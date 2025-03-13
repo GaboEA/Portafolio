@@ -2,7 +2,7 @@
     var numero = 0;
     var detectorPos = true;
 
-    const douc = "repeating-linear-gradient(rgb(4, 5, 43),rgb(39, 41, 80) )";
+    const douc = "linear-gradient(to top, #03052a,#212569, #03052a)";
     // const src = document.getElementsById("--box");
     
     // src.addEventListener("touchstart",(e) => {
