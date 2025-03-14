@@ -149,6 +149,30 @@ body{
     width: 80%;
 }
 
+.profile_container{
+    justify-self: end;
+    background-image: url(/img/img_profile_real_NS.png);
+    background-size: contain;
+    position: absolute;
+    width: 400px;
+    height: 800px;
+    transition: 1s;
+    /* z-index: 2; */
+}
+
+.profile_container:hover{
+    background-image: url(/img/img_profile_real.png);
+    scale: 1.5;
+    transition: 1s;
+    margin-top: 14em;
+    margin-right: 7em;
+}
+
+.profile_img{
+    /* position: relative; */
+    width:400px ;
+}
+
 
 /* body */
 ::before, ::after {
