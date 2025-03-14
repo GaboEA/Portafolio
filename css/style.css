@@ -437,13 +437,104 @@ hr._division{
 
 .contact_insidebox{
     width: 500px;
+    align-content: space-evenly;
     border-radius: 5%;
     background-color: #212569;
     background-image: linear-gradient(to right top, #03052a 400px, transparent, #03052a );
+    scale: 0.8;
+    transition: 0.4s;
 }
 
-.form_text{
-    
+.contact_insidebox:hover{
+    transition: 0.4s;
+    scale: 1;
+    border: #d3c89b 4px double ;
+    filter: drop-shadow(0px 7px 7px #000000b3);
+}
+
+.contact_inputs{
+    color: white;
+    display: grid;
+    justify-items: start;
+    gap: 1em;
+    padding: 0 3em 0 3em;
+    /* padding-left: 3em; */
+}
+
+.inputmail{
+    justify-self: end;
+    width: 312px;
+    background-color: #dcdcdc;
+    border-radius: 5px;
+}
+
+.inputmessage{
+    justify-self: end;
+    height: 92px;
+    background-color: #dcdcdc;
+    border-radius: 5px;
+}
+
+.cta{
+    display: inline-block;
+    background-color: #212569;
+    width: 200px;
+    justify-self: center;
+    color: white;
+    text-decoration: none;
+    margin: 30px;
+    padding: 13px 30px;
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+.cta:hover{
+    opacity: 1;
+    transition: 0.5s;
+    filter: none;
+    scale: 1.2;
+    filter: drop-shadow(0px 0px 7px white)  invert(100%); 
+}
+
+.contact_social{
+    display: grid;
+    justify-items: center;
+}
+
+.social_container{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    grid-gap: 1rem;
+    width: fit-content;
+}
+
+.social_img{
+    background-color: #D4C99D;
+    border-radius: 50%;
+    border: #7D6E32 5px solid;
+    margin: 0 1em 0 1em;
+    cursor: pointer;
+    scale: 1;
+    transition: 0.5s;
+    width: 96px;
+}
+
+.social_img:hover{
+    opacity: 1;
+    transition: 0.5s;
+    filter: none;
+    scale: 1.5;
+    filter: drop-shadow(0px 0px 7px white)  invert(100%); 
+}
+
+img, .social_img{
+    overflow: hidden;
+}
+
+/* footer */
+
+.footer_copyright{
+    text-align: center;
 }
 /* Internal Video Youtube */
 
