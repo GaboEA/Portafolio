@@ -40,7 +40,7 @@ body{
     font-size: 30px;
     font-family: "Dangrek";
     filter: drop-shadow(2px 5px 5px rgba(0, 0, 0, 0.7));
-    
+    cursor: pointer;
 }
 
 .nav__link{
@@ -449,6 +449,11 @@ hr._division{
 
 /* contact */
 
+.contact_container{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
 .contact_box{
     display: flex;
     flex-direction: row;
@@ -461,13 +466,13 @@ hr._division{
     border-radius: 5%;
     background-color: #212569;
     background-image: linear-gradient(to right top, #03052a 400px, transparent, #03052a );
-    scale: 0.8;
+    scale: 0.7;
     transition: 0.4s;
 }
 
 .contact_insidebox:hover{
     transition: 0.4s;
-    scale: 1;
+    scale: 1    ;
     border: #d3c89b 4px double ;
     filter: drop-shadow(0px 7px 7px #000000b3);
 }
@@ -553,9 +558,13 @@ img, .social_img{
 
 /* footer */
 
-.footer_copyright{
+.footer {
+    display: flex;
     text-align: center;
+    height: 100px;
+    align-content: space-evenly;
 }
+
 /* Internal Video Youtube */
 
 .video_expand {

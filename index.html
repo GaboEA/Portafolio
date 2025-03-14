@@ -18,16 +18,16 @@
             </div>
             <ul class="nav__link nav__link--menu">
                 <li class="nav_items">
-                    <a href="#" class="nav__links">Inicio</a>
+                    <a href="Inicio" onclick="location.href='#_body';return false;" class="nav__links">Inicio</a>
                 </li>
                 <li class="nav_items">
-                    <a href="#" class="nav__links">Experiencia</a>
+                    <a href="Experiencia" onclick="location.href='#_exp';return false;" class="nav__links">Experiencia</a>
                 </li>
                 <li class="nav_items">
-                    <a href="#" class="nav__links">Proyectos</a>
+                    <a href="Proyectos" onclick="location.href='#_proyecto';return false;" class="nav__links">Proyectos</a>
                 </li>
                 <li class="nav_items">
-                    <a href="#" class="nav__links">contacto</a>
+                    <a href="Contacto" onclick="location.href='#_contact';return false;" class="nav__links">contacto</a>
                 </li>
                 <img src="Img/close.svg" alt="cerrar" class="nav_close">
             </ul>
@@ -44,6 +44,7 @@
         <p class="hero_paragraph">
             Soy un apasionado desarrollador de videojuegos, me gusta crear experiencias cautivadoras e inmersivas para todo tipo de plataformas y géneros. mi experiencia abarca desde juegos para VR/AR, como juegos 3D y 2D.
         </p>
+        <div id="_exp" style="height: 100px; margin-top: 100px;"></div>
     </div>
 </section>
 <main>
@@ -73,7 +74,7 @@
         </div>
     </section>
 
-    <section class="proyects ">
+    <section id="_proyecto" class="proyects ">
         <div class="proyect_container container">
             <div class="exp_title --white_shadow --fontBlack">
                 <img class="img_point" src="img/img_circle_bright.svg" alt="Punto">
@@ -198,8 +199,8 @@
     <hr class="" style="border:#03052a 2px solid; border-radius: 5px; margin:0 5em 0 5em;">
     <!-- <hr style="border:#03052a 2px solid; border-radius: 5px; margin:1em 8em 1em 8em;"> -->
     <section class="contact experience">
-        <div class="contact_container container">
-            <div class="exp_title --black_shadow">
+        <div id="_contact" class="contact_container container">
+            <div class="exp_title --black_shadow" style="margin-bottom: 0;">
                 <img class="img_point" src="img/img_circle.svg" alt="Punto">
                 <h2 class="subtitle index_text">Contacto</h2>
             </div>
@@ -238,9 +239,6 @@
         <h5 class="footer_copyright">Derechos reservados &copy; Gabriel Eraso 2025</h5>
     </section>
 </footer>
-<!-- <script src="js/slider.js"></script>
-<script src="js/question.js"></script>
-<script src="js/menu.js"></script> -->
 
 <script src="js/stickyNav.js"></script>
 <script src="js/slider.js"></script>
