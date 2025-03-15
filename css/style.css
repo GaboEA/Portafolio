@@ -151,7 +151,7 @@ body{
 
 .profile_container{
     justify-self: end;
-    background-image: url(img/img_profile_real_NS.png);
+    background-image: url(/img/img_profile_real.png);
     background-size: contain;
     position: absolute;
     width: 400px;
@@ -161,7 +161,7 @@ body{
 }
 
 .profile_container:hover{
-    background-image: url(img/img_profile_real.png);
+    background-image: url(/img/img_profile_real.png);
     scale: 1.5;
     transition: 1s;
     margin-top: 14em;
