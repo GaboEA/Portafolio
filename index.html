@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
+    <div title="fullscreen" id="unity-fullscreen-button">
+        <img class="bx-breathe" src="img/fullscreen.svg" alt="fullscreen">
+    </div>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
@@ -55,13 +58,13 @@
       var loaderUrl = buildUrl + "/Build.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/Build.data.br",
-        frameworkUrl: buildUrl + "/Build.framework.js.br",
-        codeUrl: buildUrl + "/Build.wasm.br",
+        dataUrl: buildUrl + "/Build.data",
+        frameworkUrl: buildUrl + "/Build.framework.js",
+        codeUrl: buildUrl + "/Build.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
+        companyName: "Gabriel",
         productName: "Portfolio",
-        productVersion: "0.1.0",
+        productVersion: "0.2.0",
         showBanner: unityShowBanner,
       };
 

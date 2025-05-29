@@ -1,4 +1,14 @@
-body { padding: 0; margin: 0 }
+body { 
+    padding: 0; 
+    margin: 0; 
+    overflow: hidden;    
+    background-color: #D7BF5B;
+    opacity: 1;
+    background-image:  radial-gradient(#04052b 0.5px, transparent 0.5px), radial-gradient(#04052b 0.5px, #D3C89B 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+}
+
 #unity-container { position: absolute }
 #unity-container.unity-desktop { left: 50%; top: 50%; transform: translate(-50%, -50%) }
 #unity-container.unity-mobile { position: fixed; width: 100%; height: 100% }
@@ -8,9 +18,32 @@ body { padding: 0; margin: 0 }
 #unity-logo { width: 154px; height: 130px; background: url('unity-logo-dark.png') no-repeat center }
 #unity-progress-bar-empty { width: 141px; height: 18px; margin-top: 10px; margin-left: 6.5px; background: url('progress-bar-empty-dark.png') no-repeat center }
 #unity-progress-bar-full { width: 0%; height: 18px; margin-top: 10px; background: url('progress-bar-full-dark.png') no-repeat center }
-#unity-footer { position: relative }
+#unity-footer { position: relative; display: none; }
 .unity-mobile #unity-footer { display: none }
 #unity-logo-title-footer { float:left; width: 102px; height: 38px; background: url('unity-logo-title-footer.png') no-repeat center }
 #unity-build-title { float: right; margin-right: 10px; line-height: 38px; font-family: arial; font-size: 18px }
-#unity-fullscreen-button { cursor:pointer; float: right; width: 38px; height: 38px; background: url('fullscreen-button.png') no-repeat center }
+#unity-fullscreen-button { cursor:pointer; float: right; width: 38px; height: 38px; margin:5px 5px 0 0; z-index: 2;/*: url("");: url('') no-repeat center */}
 #unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
+
+.bx-breathe {
+    animation: breathe 1.4s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0% {
+    transform:scale(1);
+    opacity:1
+  }
+  50% {
+    transform:scale(1.4);
+    opacity:.4;
+  }
+  to {
+    transform:scale(1);
+    opacity:1;
+  }
+}
+
+@media (max-width: 412px) {
+  #unity-canvas { width: 640px; height: 400px; }
+}
