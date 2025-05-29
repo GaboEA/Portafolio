@@ -2,247 +2,130 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabriel Eraso - Portafolio</title>
+    <meta name="viewport" http-equiv="Content-Type" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Eraso | Portafolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/favicon_320.png">
     <link rel="stylesheet" href="css/normalize.css">
 
 </head>
 </head>
-<body id="_body">
-    <div class="nav_bg --fontWhite --fontBlack" id="--nav_bg">
-        <nav class="nav container" id="--box">
-            <div class="nav_logo">
-                <h2 class="nav_title">Gabriel Eraso</h2>
-            </div>
-            <ul class="nav__link nav__link--menu">
-                <li class="nav_items">
-                    <a href="Inicio" onclick="location.href='#_body';return false;" class="nav__links">Inicio</a>
-                </li>
-                <li class="nav_items">
-                    <a href="Experiencia" onclick="location.href='#_exp';return false;" class="nav__links">Experiencia</a>
-                </li>
-                <li class="nav_items">
-                    <a href="Proyectos" onclick="location.href='#_proyecto';return false;" class="nav__links">Proyectos</a>
-                </li>
-                <li class="nav_items">
-                    <a href="Contacto" onclick="location.href='#_contact';return false;" class="nav__links">contacto</a>
-                </li>
-                <img src="Img/close.svg" alt="cerrar" class="nav_close">
-            </ul>
-            <div class="nav_menu">
-                <img src="Img/menu.svg" alt="menu" class="nav_img">
-            </div>
-        </nav>    
-    </div>
-<section class="hero">
-    <div></div>
-    <div class="profile_container"><img id="profile_id" class="profile_img" src="img/img_profile_real_NS.png" alt="Gabriel"></div>
-    <div class="hero_container">
-        <h1 class="hero_title">Soy Gabriel Eraso</h1>
-        <p class="hero_paragraph">
-            Soy un apasionado desarrollador de videojuegos, me gusta crear experiencias cautivadoras e inmersivas para todo tipo de plataformas y géneros. mi experiencia abarca desde juegos para VR/AR, como juegos 3D y 2D.
-        </p>
-        <div id="_exp" style="height: 100px; margin-top: 100px;"></div>
-    </div>
-</section>
-<main>
-    <section class="container experience">
-        <div class="exp_title --black_shadow">
-            <img class="img_point" src="img/img_circle.svg" alt="Punto">
-            <h2 class="subtitle index_text">Experiencia</h2>
-        </div>
-        <div class="exp_left_side">
-            <div class="exp_box_left --fontBlack --black_shadow">
-                <h2 class="subtitle index_text"> D.A.R. Soluciones Empresariales </h2>
-                <p class="exp_paragraph">Desarrollar proyectos en VR dentro del motor Unity, elaborar y crear los assets requeridos para su posterior integración dentro del motor, crear mecánicas acorde a lo requerido para el proyecto, verificar y asegurar su optima funcionalidad
-                </p>
-            </div>
-        </div>
-        <div class="exp_right_side">
-            <div class="exp_box_right --fontBlack --black_shadow">
-                <h2 class="subtitle index_text">Grid Games</h2>
-                <p class="exp_paragraph">Liderar el desarrollo de personajes 2D, 3D y mecánicas de juego, creando experiencias inmersivas y atractivas. Aplicando habilidades avanzadas en Unity y Blender para desarrollar activos de alta calidad.</p>
-            </div>
-        </div>
-        <div class="exp_left_side">
-            <div class="exp_box_left --fontBlack --black_shadow">
-                <h2 class="subtitle index_text">SENASOFT</h2>
-                <p class="exp_paragraph">Desarrollar un prototipo innovador de VR para Meta Quest 2, demostrando experiencia en Unity, Blender y C#. Destacado por habilidades en modelado 3D, programación de VR y colaboración, con reconocimiento destacado por parte de la Universidad de los Andes.</p>
-            </div>
-        </div>
-    </section>
+<body>
+    <div id="unity-container" class="unity-desktop">
+         <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+         <div id="unity-loading-bar">
+           <div id="unity-logo"></div>
+           <div id="unity-progress-bar-empty">
+             <div id="unity-progress-bar-full"></div>
+           </div>
+         </div>
+         <div id="unity-warning"> </div>
+       </div>
 
-    <section id="_proyecto" class="proyects ">
-        <div class="proyect_container container">
-            <div class="exp_title --white_shadow --fontBlack">
-                <img class="img_point" src="img/img_circle_bright.svg" alt="Punto">
-                <h2 class="subtitle index_text">Proyectos</h2>
-            </div>
-            <div class="proyect_slider">     
-                <div class="proyect_box --fontWhite fade" id="--proyect">
-                    <div class="video_container">
-                        <img class="proyect_img --black_shadow" id="p_img" src="img/img_ea.png" style="width: 300px; height: 205px;" alt="EA">
-                        <div id="v_expand" class="video_expand">
-                            <span class="close">&times;</span>
-                        </div>
-                        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/Zn3HLaHcv1Q?si=-E4H9urHVKx-M3wN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="proyect_video"></iframe> -->
-                    </div>
-                    <div class="proyect_info">
-                        <h2 class="subtitle index_text">Egg's Adventure</h2>
-                        <hr class="_division">
-                        <p class="proyect_paragraph">Juego de aventura y plataforma donde el protagonista es un huevo que debe retornar a casa solo con la ayuda de la característica única del joy-con "el acelerómetro". Diseñado desde cero en Blender e integrados a Unity, garantizando una experiencia de juego divertida y fluida.</p>
-                        <hr class="_division">
-                        <div class="proyect_platform">
-                            <h4 class="subtitle index_text" >plataforma:</h4>
-                            <a href="https://www.nintendo.com/es-co/">
-                                <img title="Nintendo Switch" class="img_proyect" src="img/img_Switch.svg" alt="Nintendo Switch">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="proyect_box --fontWhite fade" id="--proyect">
-                    <div class="video_container">
-                        <img class="proyect_img --black_shadow" id="p_img" src="img/img_ccc.png" style="width: 300px; height: 126px;" alt="CcC">
-                        <div id="v_expand" class="video_expand">
-                            <span class="close">&times;</span>
-                          </div>
-                    </div>
-                    <div class="proyect_info">
-                        <h2 class="subtitle index_text">Colombian Customs Collection</h2>
-                        <hr class="_division">
-                        <p class="proyect_paragraph">Juego arcade y simulador VR, donde redescubrimos los juegos de nuestra niñez, como lo son “Matatena”, “Canicas” y otros juegos autóctonos como “Tejo” y “Rana”. Desarrollado para Oculus Quest 2.</p>
-                        <hr class="_division">
-                        <div class="proyect_platform">
-                            <h4 class="subtitle index_text" >plataforma:</h4>
-                            <a href="https://www.meta.com/experiences/">
-                                <img title="Meta Quest" class="img_proyect" src="img/img_meta.svg" alt="Meta Quest 2">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="proyect_box --fontWhite fade" id="--proyect">
-                    <div class="video_container">
-                        <img class="proyect_img --black_shadow" id="p_img" src="img/img_OStE.png" style="width: 300px; height: 220px;" alt="OstE">
-                        <div id="v_expand" class="video_expand">
-                            <span class="close">&times;</span>
-                        </div>
-                    </div>
-                    <div class="proyect_info">
-                        <h2 class="subtitle index_text">One Step to Explote</h2>
-                        <hr class="_division">
-                        <p class="proyect_paragraph">El buscaminas de toda la vida pero ahora inmersivo, Juego arcade / simulador VR, en su fase de desarrollo y prueba técnica antes de mejorar toda la UI y UX. Desarrollado para Oculus Quest 2.</p>
-                        <hr class="_division">
-                        <div class="proyect_platform">
-                            <h4 class="subtitle index_text" >plataforma:</h4>
-                            <a href="https://www.meta.com/experiences/">
-                                <img title="Meta Quest" class="img_proyect" src="img/img_meta.svg" alt="Meta Quest 2">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="barra_" style="width:100%">
-                    <span class="dots demo fade" onclick="currentDiv(1)"></span>
-                    <span class="dots demo fade" onclick="currentDiv(2)"></span>
-                    <span class="dots demo fade" onclick="currentDiv(3)"></span>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="technology experience">
-        <div class="tech_container container">
-            <div class="exp_title --black_shadow">
-                <img class="img_point" src="img/img_circle.svg" alt="Punto">
-                <h2 class="subtitle index_text">Conocimiento</h2>
-            </div>
-            <div class="tech_stack">
-                <h2 class="subtitle --fontBlack">Programas</h2>
-                <div class="tech_programs">
-                    <div class="programs_row">
-                        <div class="tech_box" ><img class="tech_img" title="Unity" src="img/img_unity.svg" alt="Unity"></div>
-                        <div class="tech_box --white_shadow"><img class="tech_img" title="Blender" src="img/icon_blender.svg" alt="Css"></div>
-                        <div class="tech_box --white_shadow"><img class="tech_img" title="Visual" src="img/icon_visual.svg" alt="Css"></div>
-                        <div class="tech_box --white_shadow"><img class="tech_img" title="Aseprite" src="img/icon_aseprite.svg" alt="Aseprite"></div>
-                        <div class="tech_box --white_shadow"><img class="tech_img" title="Git" src="img/icon_git.svg" alt="Git"></div>
-                        <div class="tech_box --white_shadow"><img class="tech_img" title="Git Hub" src="img/icon_github.svg" alt="Git Hub"></div>
-                        <div class="tech_box --white_shadow"><img class="tech_img" title="Libresprite" src="img/icon_libresprite.png" alt="Aseprite"></div>
-                        <div class="tech_box --white_shadow"><img class="tech_img" title="Code" src="img/icon_vscode.svg" alt="Css"></div>
-                    </div>
-                    <div class="programs_row">
-                        <div class="tech_box --white_shadow"><img class="tech_img" title="Adobe Substance 3D" src="img/icon_adobe.svg" alt="Adobe Substance"></div>
-                        <div class="tech_box --white_shadow"><img class="tech_img" title="Photoshop" src="img/icon_ps.svg" alt="Photoshop"></div>
-                        <div class="tech_box --white_shadow"><img class="tech_img" title="Illustrator" src="img/icon_illustrator.svg" alt="Illustrator"></div>
-                        <div class="tech_box --white_shadow"><img class="tech_img" title="Premiere" src="img/icon_premiere.svg" alt="Premiere"></div>
-                        <div class="tech_box --white_shadow"><img class="tech_img" title="Audition" src="img/icon_audition.svg" alt="Audition"></div>
-                        <div class="tech_box --white_shadow"><img class="tech_img" title="After Effects" src="img/icon_aftereffects.svg" alt="After Effects"></div>
-                        <div class="tech_box --white_shadow"><img class="tech_img" title="SQlite" src="img/icon_sqlite.svg" alt="SQlite"></div>
-                        <div class="tech_box --white_shadow"><img class="tech_img" title="mySQL" src="img/icon_mysql.svg" alt="mySQL"></div>
-                    </div>
-                </div>
-                <h2 class="subtitle --fontBlack">Lenguajes</h2>
-                <div class="tech_programs">
-                    <div class="programs_row" style="margin-bottom: 50px;">
-                        <div class="tech_box --white_shadow"><img class="tech_img" title="C#" src="img/icon_c-sharp.svg" alt="C-sharp"></div>
-                        <div class="tech_box --white_shadow"><img class="tech_img" title="C++" src="img/icon_c-plusplus.svg" alt="C-plus plus"></div>
-                        <div class="tech_box --white_shadow"><img class="tech_img" title="JavaScript" src="img/icon_js.svg" alt="JavaScript"></div>
-                        <div class="tech_box --white_shadow"><img class="tech_img" title="Html" src="img/icon_html.svg" alt="Html"></div>
-                        <div class="tech_box --white_shadow"><img class="tech_img" title="Css" src="img/icon_css.svg" alt="Css"></div>
-                        <div class="tech_box --white_shadow"><img class="tech_img" title="High Level Shader Language" src="img/icon_hlsl.svg" alt="HLSL"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- <hr style="border:#03052a 2px solid; border-radius: 5px; margin:1em 8em 1em 8em;"> -->
-    <hr class="" style="border:#03052a 2px solid; border-radius: 5px; margin:0 5em 0 5em;">
-    <!-- <hr style="border:#03052a 2px solid; border-radius: 5px; margin:1em 8em 1em 8em;"> -->
-    <section class="contact experience">
-        <div id="_contact" class="contact_container container">
-            <div class="exp_title --black_shadow" style="margin-bottom: 0;">
-                <img class="img_point" src="img/img_circle.svg" alt="Punto">
-                <h2 class="subtitle index_text">Contacto</h2>
-            </div>
-            <div class="contact_box --black_shadow">
-                <div class="contact_email contact_insidebox">
-                    <form class="contact_form" action="https://formspree.io/f/meoaqdqn" method="POST">
-                        <h2 class="form_text --fontBlack">Contáctame</h2>
-                        <div class="contact_inputs">
-                            <label class="label_mail"><h4 style="margin-bottom: 0;">Correo:</h4></label>
-                             
-                            <input class="inputmail" type="email" name="email" placeholder="example@mail.com">
-                                <label class="label_message"> <h4 style="margin-bottom: 0;">Mensaje:</h4> </label>
-                           <textarea class="inputmessage" name="message" placeholder="¿Cómo te puedo ayudar?"></textarea>
-                            <button class="cta" type="submit">Send</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="contact_social contact_insidebox">
-                    <h2 class="form_text --fontBlack">Redes</h2>
-                    <div class="social_container">
-                        <div class="social_img"><a href="🤝🏻" onclick="location.href='https://www.linkedin.com/in/jgabrielea/';return false;"><img src="img/icon_linkedin.svg" title="LinkedIn" alt="LinkedIn"></a></div>
-                        <div class="social_img"><a href="🐱" onclick="location.href='https://github.com/GaboEA';return false;"><img src="img/icon_github.svg" title="Github" alt="Github"></a></div>
-                        <div class="social_img"><a href="😏" onclick="location.href='https://api.whatsapp.com/send?phone=573005072639&text=Hola!+Quisiera+proponerte+la+siguiente+oferta&utm_source=Web&utm_medium=Boton_Flotante_Home&utm_campaign=Masificacion_WhatsApp_Boton_Flotante';return false;"><img src="img/icon_whatsapp.svg" title="Whatsapp" alt="Whatsapp"></a></div>
-                        <div class="social_img"><a href="🛫" onclick="location.href='https://t.me/jgabrielEA';return false;"><img src="img/icon_telegram.svg" title="Telegram" alt="Telegram"></a></div>
-                    </div>
-                    <div class="social_img"><img src="img/icon_pdffile.svg" title="Curriculum Vitae" alt="Curriculum Vitae"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
+    <script>
+      var canvas = document.querySelector("#unity-canvas");
 
-<footer class="footer">
-    <section class="footer_copy container">
-        <hr class="" style="border:#03052a 2px solid; border-radius: 5px; margin:0 5em 0 5em;">
-        <h5 class="footer_copyright">Derechos reservados &copy; Gabriel Eraso 2025</h5>
-    </section>
-</footer>
+      // Shows a temporary message banner/ribbon for a few seconds, or
+      // a permanent error message on top of the canvas if type=='error'.
+      // If type=='warning', a yellow highlight color is used.
+      // Modify or remove this function to customize the visually presented
+      // way that non-critical warnings and error messages are presented to the
+      // user.
+      function unityShowBanner(msg, type) {
+        var warningBanner = document.querySelector("#unity-warning");
+        function updateBannerVisibility() {
+          warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
+        }
+        var div = document.createElement('div');
+        div.innerHTML = msg;
+        warningBanner.appendChild(div);
+        if (type == 'error') div.style = 'background: red; padding: 10px;';
+        else {
+          if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
+          setTimeout(function() {
+            warningBanner.removeChild(div);
+            updateBannerVisibility();
+          }, 5000);
+        }
+        updateBannerVisibility();
+      }
 
-<script src="js/stickyNav.js"></script>
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/Build.loader.js";
+      var config = {
+        arguments: [],
+        dataUrl: buildUrl + "/Build.data.br",
+        frameworkUrl: buildUrl + "/Build.framework.js.br",
+        codeUrl: buildUrl + "/Build.wasm.br",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "Portfolio",
+        productVersion: "0.1.0",
+        showBanner: unityShowBanner,
+      };
+
+      // By default, Unity keeps WebGL canvas render target size matched with
+      // the DOM size of the canvas element (scaled by window.devicePixelRatio)
+      // Set this to false if you want to decouple this synchronization from
+      // happening inside the engine, and you would instead like to size up
+      // the canvas DOM size and WebGL render target sizes yourself.
+      // config.matchWebGLToCanvasSize = false;
+
+      // If you would like all file writes inside Unity Application.persistentDataPath
+      // directory to automatically persist so that the contents are remembered when
+      // the user revisits the site the next time, uncomment the following line:
+      // config.autoSyncPersistentDataPath = true;
+      // This autosyncing is currently not the default behavior to avoid regressing
+      // existing user projects that might rely on the earlier manual
+      // JS_FileSystem_Sync() behavior, but in future Unity version, this will be
+      // expected to change.
+
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        // Mobile device style: fill the whole browser client area with the game canvas:
+
+        var meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+        document.getElementsByTagName('head')[0].appendChild(meta);
+        document.querySelector("#unity-container").className = "unity-mobile";
+        canvas.className = "unity-mobile";
+
+        // To lower canvas resolution on mobile devices to gain some
+        // performance, uncomment the following line:
+        // config.devicePixelRatio = 1;
+
+
+      } else {
+        // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
+        canvas.style.width = "1920px";
+        canvas.style.height = "1080px";
+      }
+
+      document.querySelector("#unity-loading-bar").style.display = "block";
+
+      var script = document.createElement("script");
+      script.src = loaderUrl;
+      script.onload = () => {
+        createUnityInstance(canvas, config, (progress) => {
+          document.querySelector("#unity-progress-bar-full").style.width = 100 * progress + "%";
+              }).then((unityInstance) => {
+                document.querySelector("#unity-loading-bar").style.display = "none";
+                document.querySelector("#unity-fullscreen-button").onclick = () => {
+                  unityInstance.SetFullscreen(1);
+                };
+
+              }).catch((message) => {
+                alert(message);
+              });
+            };
+
+      document.body.appendChild(script);
+
+    </script>
+
+<!-- <script src="js/stickyNav.js"></script>
 <script src="js/slider.js"></script>
-<script src="js/changeimg.js"></script>
+<script src="js/changeimg.js"></script> -->
 
 </body>
 </html>
